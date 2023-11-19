@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+}
+
+body {
+  background-color: #f4f2ef;
+  color: #0b0d10;
+}
+
+#body-bg {
+  opacity: 0.2;
+}
+
+#logo {
+  text-shadow: 0 1rem 1rem #3083dc;
+  color: #181818;
+}
+
+#logo::after {
+  background-color: #3083dc;
+}
+
+#content-bg {
+  opacity: 0.02;
+}
+
+.form-group > *,
+.form-group > *::placeholder {
+  color: black !important;
+  border-color: black !important;
+}
+
+.form-group button:hover {
+  background-color: #181818 !important;
+  color: white !important;
+}
+
+#account-container {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.avatar {
+  background: #181818;
+}
+
+.credit-card {
+  background: linear-gradient(45deg, #5e9fe6, #9bcbff);
+}
+
+.expense:hover {
+  background: linear-gradient(45deg, #5e9fe6, #9bcbff);
+}
+
+.expense .expense-logo {
+  background-color: #181818;
+}
+
+#currency-container .currency-cards {
+  color: white;
+}
+
+.balance-card {
+  background: linear-gradient(45deg, #5e9fe6, #9bcbff);
+  color: white;
+}
+
+.quick-transfers .transfer {
+  background: rgba(102, 176, 255, 0.4);
+}
+
+.transfer:hover {
+  scale: 1.1;
+}
+
+.new {
+  border: 2px dashed #72b6ff;
+  background: none !important;
+}
+
+.new .img-container {
+  background: #72b6ff;
+  color: #3083dc;
+}
+
+.currency-card {
+  background: linear-gradient(-45deg, #5e9fe6 20%, #9bcbff);
+}
+
+.currency-info .icon {
+  background-color: #181818;
+}
+
+/* FOOTER */
+footer {
+  background: none;
+  color: #000;
+  padding: 1rem;
+  text-align: center;
+}

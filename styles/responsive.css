@@ -1,0 +1,153 @@
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  main > * {
+    width: 100%;
+  }
+
+  nav ul li {
+    white-space: nowrap;
+    font-size: 0.5rem;
+  }
+
+  #account-container,
+  #currency-container {
+    position: static;
+  }
+
+  #currency-container .currency-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #content-container {
+    order: 1;
+  }
+
+  #account-container {
+    order: 2;
+  }
+
+  #currency-container {
+    order: 3;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  #currency-container .currency-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  footer div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer ul,
+  footer h5 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #logo {
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    font-size: 0.6rem;
+  }
+  #date {
+    display: none;
+  }
+
+  article h1 {
+    font-size: 1rem !important;
+  }
+  article p {
+    font-size: 0.8rem !important;
+  }
+
+  form h4 {
+    font-size: 0.8rem !important;
+  }
+
+  form input,
+  form textarea {
+    padding: 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  .avatar {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card span {
+    font-size: 0.8rem;
+  }
+
+  .expenses .title h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .expense .detail div span {
+    font-size: 0.8rem;
+  }
+
+  .expense .detail > span {
+    font-size: 0.8rem;
+  }
+
+  .currency-card .title .name {
+    font-size: 0.8rem;
+  }
+
+  .currency-card .title .abbr {
+    font-size: 0.6rem;
+  }
+
+  .currency-card .change h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .currency-card .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  *:not(main):not(body):not(html) {
+    display: none;
+  }
+
+  main::after {
+    background-color: rgba(255, 0, 0, 0.2);
+    content: "Please use a device with a larger screen";
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}
